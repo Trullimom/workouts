@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Trullimom/workouts.git/static/css/main.12189337.css",
+    "main.js": "/Trullimom/workouts.git/static/js/main.13a13501.js",
+    "static/js/787.65c33ee5.chunk.js": "/Trullimom/workouts.git/static/js/787.65c33ee5.chunk.js",
+    "index.html": "/Trullimom/workouts.git/index.html",
+    "main.12189337.css.map": "/Trullimom/workouts.git/static/css/main.12189337.css.map",
+    "main.13a13501.js.map": "/Trullimom/workouts.git/static/js/main.13a13501.js.map",
+    "787.65c33ee5.chunk.js.map": "/Trullimom/workouts.git/static/js/787.65c33ee5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12189337.css",
+    "static/js/main.13a13501.js"
+  ]
+}
