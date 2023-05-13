@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import CardList from "./components/CardList";
+import { WorkoutList } from "./components/workoutList";
+import SearchBox from "./components/SearchBox";
 
 function App() {
+  const [input, setInput] = useState("");
+  const onSearchMode = (e) => {
+    setInput(e.target.value);
+  };
+
+  const filteredList = WorkoutList.filter((item) => {
+    return item.title.toLowerCase().includes(input.toLowerCase());
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>WORKOUTS</h1>
+      <SearchBox inputValue={input} onChange={onSearchMode} />
+      <hr></hr>
+      <CardList workouts={filteredList} />
     </div>
   );
 }
